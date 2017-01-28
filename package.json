@@ -4,12 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && babel src --out-dir dist --source-maps",
+    "dev": "babel-watch src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dgram": "^1.0.1",
+    "keycode": "^2.1.8",
     "node-sdl2": "^2.0.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-node7": "^1.4.0",
+    "babel-watch": "^2.0.5",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
