@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/test.js"],"names":["sock","console","log"],"mappings":";;AAAA;;AAIA,MAAMA,OAAO,kBAAQ,IAAR,EAAc,eAAd,EAA+B,MAAM,CAEjD,CAFY,CAAb;;AAIAC,QAAQC,GAAR,CAAYF,IAAZ","file":"test.js","sourcesContent":["import {\n  connect,\n} from 'net';\n\nconst sock = connect(8000, '192.168.2.218', () => {\n\n});\n\nconsole.log(sock);\n"]}

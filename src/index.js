@@ -22,7 +22,7 @@ setInterval(() => {
       socket.send(newbuttons);
       oldbuttons = newbuttons;
       count = 0;
-    } else if (oldbuttons === newbuttons && count < 5) {
+    } else if (oldbuttons === newbuttons && count < 10) {
       socket.send(newbuttons);
       count++;
     }
