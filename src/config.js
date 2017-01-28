@@ -11,6 +11,8 @@ const config = {
     Y: 'Y',
     L: 'L',
     R: 'R',
+    Start: 'S',
+    Select: 'D',
   },
 };
 
